@@ -118,7 +118,7 @@ Will the last line of this script print 139926795932424? Answer with Yes or No.
 File: 28-answer.txt
 
 **30. #pythonic**
-Write a function magic_string() that returns a string “Holberton” n times the number of the iteration (see code):
+Write a function magic_string() that returns a string “Best School” n times the number of the iteration (see code):
 Format: see example
 Your file should be maximum 4-line long (no documentation needed)
 You are not allowed to import any module
