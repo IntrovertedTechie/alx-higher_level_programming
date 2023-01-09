@@ -1,9 +1,15 @@
 #!/usr/bin/python3
+"""
+BaseGeometry Module
+"""
 
 
 class BaseGeometry:
-    """Base geometry class"""
-
+    """
+    A class with very basic geometry functionality
+    """
     def area(self):
-        """area function that is empty"""
-        raise Exception('area() is not implemented')
+        """
+        Returns the area of the object that inherits this class
+        """
+        raise Exception("area() is not implemented")

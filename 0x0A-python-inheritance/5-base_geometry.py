@@ -1,6 +1,11 @@
 #!/usr/bin/python3
+"""
+Empty base geometry class
+"""
 
 
-def lookup(obj):
-    """ returns list of available attributes and methods for object"""
-    return(dir(obj))
+class BaseGeometry:
+    """
+    Empty class
+    """
+    pass

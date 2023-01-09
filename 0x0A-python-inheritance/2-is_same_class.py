@@ -1,10 +1,13 @@
 #!/usr/bin/python3
+"""
+Is same class?
+"""
 
 
 def is_same_class(obj, a_class):
-    """checks if object is exactly an instance of a_class
-    Args
-       obj: object
-       a_class: class
     """
-    return(type(obj) == a_class)
+    Checks to see if the obj is of the same class
+    """
+    if type(obj) is a_class:
+        return True
+    return False

@@ -1,15 +1,20 @@
 #!/usr/bin/python3
+"""
+New list subclass MyList
+"""
 
 
 class MyList(list):
-    """class utilizing list class"""
-
-    def __init__(self):
-        """initializer for MyList"""
-        pass
-
+    """
+    Nothing much more to MyList
+    """
     def print_sorted(self):
-        """print sorted list"""
-        res = list.copy(self)
-        list.sort(res)
-        print(res)
+        """
+        Prints the current instance in sorted order
+        """
+        sorted_list = sorted(self)
+        print(sorted_list)
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testfile("tests/1-my_list.txt")

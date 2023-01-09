@@ -1,13 +1,13 @@
 #!/usr/bin/python3
+"""
+Inherits from
+"""
 
 
 def inherits_from(obj, a_class):
-    """returns true if object is an instance of a class inherited from a_class
-    Args
-        obj: object
-        a_class: class
-    Return: True or False"""
-    if not type(obj) == a_class and issubclass(type(obj), a_class):
-        return(True)
-    else:
-        return(False)
+    """
+    Determines if the obj is a descendant, not of the same type
+    """
+    if isinstance(obj, a_class) and type(obj) is not a_class:
+        return True
+    return False
