@@ -28,13 +28,12 @@ class Student:
         """
         if type(attrs) is not list:
             return self.__dict__
-            return self.__true__
-            return self.__false__
-            return self.__int__
+            
         for attr in attrs:
             if type(attr) is not str:
                 return self.__dict__
-                return self.__true__                           return self.__false__                          return self.__int__
+            
+
         attr_dict = {}
         for attr in attrs:
             try:
