@@ -1,16 +1,11 @@
 #!/usr/bin/python3
-"""Fetches https://alx-intranet.hbtn.io/status using urllib."""
-
+"""fetches https://alx-intranet.hbtn.io/status using the urllib package
+"""
 import urllib.request
-
-url = "https://alx-intranet.hbtn.io/status"
-req = urllib.request.Request(url)
-
-with urllib.request.urlopen(req) as response:
-    the_page = response.read()
-
-print("Body response:")
-print("\t- type:", type(the_page))
-print("\t- content:", the_page)
-print("\t- utf8 content:", the_page.decode("utf-8"))
+with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
+    data = response.read()
+    print("Body response:")
+    print("	- type:", type(data))
+    print("	- content:", data)
+    print("	- utf8 content:", data.decode('utf-8'))
 
